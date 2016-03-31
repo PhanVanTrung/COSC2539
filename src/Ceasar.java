@@ -70,8 +70,13 @@ public class Ceasar {
 				for (int j = 0; j < alp.length(); j++) {
 					if (c==alp.charAt(j)) {
 						// when found --> 
-						out.write(alp.charAt((j-key)%alp.length()));
-						System.out.print(alp.charAt((j-key)%alp.length()));
+						if (j >= key) {
+							out.write(alp.charAt((j-key)%alp.length()));
+							System.out.print(alp.charAt((j-key)%alp.length()));
+						} else {	// j < key
+							out.write(alp.charAt(alp.length() + (j-key)));
+							System.out.print(alp.charAt(alp.length() + (j-key)));
+						}
 					}
 				}
 			}

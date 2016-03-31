@@ -73,7 +73,9 @@ public class ColTrans {
 				// convert int (i) to char (c)
 				c = (char) i;
 				// store read lines in a list of characters
-				s.add(c);
+				if (c != '>' && c != '<' ) {
+					s.add(c);
+				}
 			}
 			// we need to infer from key to "new key" dekey to easily decrypt the cipher text
 			int dekey = s.size()/key;

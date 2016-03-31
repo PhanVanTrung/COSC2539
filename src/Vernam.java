@@ -27,6 +27,9 @@ public class Vernam {
 			// read cipher text
 			while ((i=in.read())!=-1) {
 				c = (char) i;
+				if(c == '<' || c == '>') {
+					continue;
+				}
 				int temp1 = -1, temp2 = -1;
 				// get index of cipher char on the alp map
 				for (int j = 0; j < alp.length(); j++) {
@@ -36,7 +39,7 @@ public class Vernam {
 				for (int k = 0; k < alp.length(); k++) {
 					if (alp.charAt(k)==key.charAt(start_at)) temp2=k;
 				}
-				// actually do addition, and write cipher char to output file
+				// actually do subtraction, and write cipher char to output file
 				if (temp1 != -1 && temp2 != -1) {
 					if(temp1>=temp2) {
 						out.write(alp.charAt((temp1-temp2)%alp.length()));
