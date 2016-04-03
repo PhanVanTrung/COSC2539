@@ -73,7 +73,7 @@ public class ColTrans {
 				// convert int (i) to char (c)
 				c = (char) i;
 				// store read lines in a list of characters
-				if (c != '>' && c != '<' ) {
+				if (c != '>' && c != '<') {
 					s.add(c);
 				}
 			}

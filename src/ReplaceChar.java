@@ -11,7 +11,7 @@ public class ReplaceChar {
 		PrintStream ps = null;
 		try {
 			in = new FileInputStream("E:\\Eclipse Workspace\\COSC2539\\bin\\msg4.enc");
-			out = new FileOutputStream("E:\\Eclipse Workspace\\COSC2539\\bin\\4_1.dec");
+			out = new FileOutputStream("E:\\Eclipse Workspace\\COSC2539\\bin\\7_1.dec");
 			ps = new PrintStream(out);
 			
 			StringBuilder s = new StringBuilder();

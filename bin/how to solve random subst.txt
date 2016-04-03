@@ -1,7 +1,5 @@
-1/ create count char frequency
-2/ create ReplaceChar function
-3/ use character-frequency technique to guess (in this case, most common character is the space)
-4/ solve munually, guess char by char.
-
-
------ notice::::::::::: as I guessed, bcoz of the file format, there is always one character extra in my case, but that should not affect the technique, solution.
+0/ remove all characters before '>' and after '<' inclusive.
+1/ create CountFrequency function (pass two arguments: first argument is input file - cipher text file, and the second is frequency output file)
+2/ create ReplaceChar function (pass two arguments: first argument is input file - cipher text file,  and the second is plain output file)
+3/ looking at the result file from CountFrequency, use character-frequency technique to guess (in this case,most common character is the space character)
+4/ solve munually, replace each character in the ReplaceChar function.
